@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Murilo de Paula">
+    <meta name="description" content="Atividade Bootstrap, aula 08/06">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  </head>
+
+  <body>
+    <div class="container bg-success">
+      Conteúdo site
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row"> 
+        Conteúdo site
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-warning "> 
+          Conteúdo 1
+        </div>
+        <div class="bg-warning"> 
+          Conteúdo 2
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-warning col-10"> 
+          Conteúdo 1
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-warning col-6 col-sm-2 col-md-10"> 
+          Conteúdo 1
+        </div>
+        <div class="bg-info col-6 col-sm-10 col-md-2"> 
+          Conteúdo 2
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-light border p-3 col-md-6"> 
+          <h2>ipsum dolor sit amet</h2>
+          <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-warning">Botão</button>
+        </div>
+        <div class="bg-light border p-3 col-md-6"> 
+          <h2>ipsum dolor sit amet</h2>
+          <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-warning">Botão</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-light border p-3 col-md-6 col-lg-4"> 
+          <h2>ipsum dolor sit amet</h2>
+          <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-warning">Botão</button>
+        </div>
+        <div class="bg-light border p-3 col-md-6 col-lg-4"> 
+          <h2>ipsum dolor sit amet</h2>
+          <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-warning">Botão</button>
+        </div>
+        <div class="bg-light border p-3 col-md-6 col-lg-4"> 
+          <h2>ipsum dolor sit amet</h2>
+          <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-warning">Botão</button>
+        </div>
+      </div>
+    </div>
+
+  <!-- Configuração grid -->
+
+  <div class="container bg-light">
+
+    <h2>Largura fixa</h2>
+    <div class="row">
+      <div class="bg-primary border col">Área 1</div>
+      <div class="bg-primary border col">Área 2</div>
+      <div class="bg-primary border col">Área 3</div>      
+      <div class="bg-primary border col">Área 4</div>      
+    </div>
+    
+    <h2>Largura automática (auto-layout)</h2>
+    <div class="row">
+      <div class="bg-primary border col-6">Área 1</div>
+      <div class="bg-primary border col-2">Área 2</div>
+      <div class="bg-primary border col">Área 3</div>
+    </div>
+
+    <h2>Largura igual empilhada</h2>
+    <div class="row">
+      <div class="bg-primary border col-sm">Área 1</div>
+      <div class="bg-primary border col-sm">Área 2</div>
+      <div class="bg-primary border col-sm">Área 3</div>
+    </div>
+
+    <h2>Ordenando</h2>
+    <div class="row">
+      <div class="bg-primary border col order-3">Área 1</div>
+      <div class="bg-primary border col order-1">Área 2</div>
+      <div class="bg-primary border col order-2">Área 3</div>
+    </div>
+
+    <h2>Offset</h2>
+    <div class="row">
+      <div class="bg-primary border col-md-6 offset-md-3">Login</div>
+    </div>
+
+    <h2>Offset de Muitos alinhamentos</h2>
+    <div class="row">
+      <div class="bg-primary border col-md-3 offset-md-6">Área 1</div>
+      <div class="bg-primary border col-md-3">Área 2</div>
+    </div>
+
+
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
